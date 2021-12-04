@@ -7,6 +7,7 @@ const isRemoveFocus = event => {
   if (numberOfSymbols < minDataLength) {
     inputSymbolsRefs.classList.add('invalid');
     inputSymbolsRefs.classList.remove('valid');
+    alert(`Введите значение не меньше: ${minDataLength} символов`);
   } else {
     inputSymbolsRefs.classList.add('valid');
     inputSymbolsRefs.classList.remove('invalid');
