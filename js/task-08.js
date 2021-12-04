@@ -1,5 +1,4 @@
 const formRefs = document.querySelector('.login-form');
-console.log(formRefs);
 
 const isLogin = event => {
   event.preventDefault();
