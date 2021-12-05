@@ -1,4 +1,4 @@
-const formRefs = document.querySelector('.login-form');
+const formRef = document.querySelector('.login-form');
 
 const isLogin = event => {
   event.preventDefault();
@@ -16,7 +16,7 @@ const isLogin = event => {
 
   console.log(formData);
 
-  formRefs.reset();
+  formRef.reset();
 };
 
-formRefs.addEventListener('submit', isLogin);
+formRef.addEventListener('submit', isLogin);
