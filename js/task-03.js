@@ -13,10 +13,10 @@ const images = [
   },
 ];
 
-const listRefs = document.querySelector('.gallery');
+const listRef = document.querySelector('.gallery');
 
 const markup = images
   .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="480"></li>`)
   .join('');
 
-listRefs.insertAdjacentHTML('afterbegin', markup);
+listRef.insertAdjacentHTML('afterbegin', markup);
