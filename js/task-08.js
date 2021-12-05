@@ -3,15 +3,18 @@ const formRefs = document.querySelector('.login-form');
 const isLogin = event => {
   event.preventDefault();
 
-  const {
-    elements: { email, password },
-  } = event.currentTarget;
+  const email = event.currentTarget.elements.email.value;
+  const password = event.currentTarget.elements.password.value;
 
-  if (email.value === '' || password.value === '') {
+  if (email === '' || password === '') {
     return alert('Заполните поля Email и Password');
   }
+  const formData = {
+    email,
+    password,
+  };
 
-  console.log(`Ваш логин: ${email.value} и пароль: ${password.value}`);
+  console.log(formData);
 
   formRefs.reset();
 };
