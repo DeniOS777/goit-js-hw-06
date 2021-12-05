@@ -1,10 +1,10 @@
-const inputRangeValueRefs = document.querySelector('#font-size-control');
+const inputRangeValueRef = document.querySelector('#font-size-control');
 
-const spanTextSize = document.querySelector('#text');
+const spanTextSizeRef = document.querySelector('#text');
 
 const setSizeText = event => {
   const variableInputRange = event.currentTarget.value;
-  spanTextSize.style.fontSize = `${variableInputRange}px`;
+  spanTextSizeRef.style.fontSize = `${variableInputRange}px`;
 };
 
-inputRangeValueRefs.addEventListener('input', setSizeText);
+inputRangeValueRef.addEventListener('input', setSizeText);
