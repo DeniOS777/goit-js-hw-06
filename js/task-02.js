@@ -1,6 +1,13 @@
-const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
+const ingredients = [
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomatos',
+  'Herbs',
+  'Condiments',
+];
 
-const listRefs = document.querySelector('#ingredients');
+const listRef = document.querySelector('#ingredients');
 
 const ingredientsArray = [];
 
@@ -11,6 +18,4 @@ for (const ingredient of ingredients) {
   ingredientsArray.push(itemEl);
 }
 
-listRefs.append(...ingredientsArray);
-
-console.log(listRefs);
+listRef.append(...ingredientsArray);
