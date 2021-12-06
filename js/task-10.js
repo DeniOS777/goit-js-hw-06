@@ -3,19 +3,11 @@ function getRandomHexColor() {
 }
 
 const inputRef = document.querySelector('input');
-console.log(inputRef);
-
 const buttonCreateRef = document.querySelector('[data-create]');
-console.log(buttonCreateRef);
-
 const buttonDestroyRef = document.querySelector('[data-destroy]');
-console.log(buttonDestroyRef);
-
 const divRef = document.querySelector('#boxes');
-console.log(divRef);
 
-//.......................................................
-let amount;
+let amount = 0;
 
 const onInputClick = event => {
   amount = Number(event.currentTarget.value);
@@ -40,6 +32,8 @@ const createBoxes = amount => {
 // Удаление всех созданных div
 const destroyBoxes = () => {
   divRef.innerHTML = '';
+  inputRef.value = 0;
+  amount = 0;
 };
 
 buttonCreateRef.addEventListener('click', () => createBoxes(amount));
