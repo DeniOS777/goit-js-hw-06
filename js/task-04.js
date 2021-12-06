@@ -1,7 +1,5 @@
 const buttonDecrementsRef = document.querySelector('[data-action="decrement"]');
-
 const buttonIncrementsRef = document.querySelector('[data-action="increment"]');
-
 const spanValueRef = document.querySelector('#value');
 
 let counterValue = 0;
