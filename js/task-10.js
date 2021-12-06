@@ -14,7 +14,6 @@ const onInputClick = event => {
   console.log(amount);
 };
 
-// Создание столько <div> сколько значение input
 const createBoxes = amount => {
   const arrayDivEl = [];
 
@@ -29,7 +28,6 @@ const createBoxes = amount => {
   divRef.append(...arrayDivEl);
 };
 
-// Удаление всех созданных div
 const destroyBoxes = () => {
   divRef.innerHTML = '';
   inputRef.value = 0;
