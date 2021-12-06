@@ -1,6 +1,6 @@
 const formRef = document.querySelector('.login-form');
 
-const isLogin = event => {
+const onLoginSubmit = event => {
   event.preventDefault();
 
   const email = event.currentTarget.elements.email.value;
@@ -19,4 +19,4 @@ const isLogin = event => {
   formRef.reset();
 };
 
-formRef.addEventListener('submit', isLogin);
+formRef.addEventListener('submit', onLoginSubmit);
