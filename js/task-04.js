@@ -6,15 +6,15 @@ const spanValueRef = document.querySelector('#value');
 
 let counterValue = 0;
 
-const decrement = step => {
+const onDecrementButtonClick = step => {
   counterValue -= step;
   spanValueRef.textContent = counterValue;
 };
 
-const increment = step => {
+const onIncrementButtonClick = step => {
   counterValue += step;
   spanValueRef.textContent = counterValue;
 };
 
-buttonDecrementsRef.addEventListener('click', () => decrement(1));
-buttonIncrementsRef.addEventListener('click', () => increment(1));
+buttonDecrementsRef.addEventListener('click', () => onDecrementButtonClick(1));
+buttonIncrementsRef.addEventListener('click', () => onIncrementButtonClick(1));
