@@ -8,7 +8,7 @@ console.log(`Number of categories: ${categoriesNumber}`);
 const loggingCategory = document.querySelectorAll('h2');
 const amountElements = document.querySelectorAll('.item ul');
 
-for (let i = 0; i < loggingCategory.length; i += 1) {
-  console.log(`Category: ${loggingCategory[i].textContent}`);
-  console.log(`Elements: ${amountElements[i].children.length}`);
-}
+loggingCategory.forEach((item, idx) => {
+  console.log(`Category: ${item.textContent}`);
+  console.log(`Elements: ${amountElements[idx].children.length}`);
+});
