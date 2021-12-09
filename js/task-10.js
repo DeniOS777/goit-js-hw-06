@@ -11,7 +11,6 @@ let amount = 0;
 
 const onInputClick = event => {
   amount = Number(event.currentTarget.value);
-  console.log(amount);
 };
 
 const createBoxes = amount => {
